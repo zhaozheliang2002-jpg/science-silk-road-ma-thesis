@@ -1,0 +1,41 @@
+{
+  "working_title": "Science Silk Road — MA Thesis Research Hub",
+  "core_interest": "I want to understand how science and diplomacy/politics are connected in China’s international scientific cooperation, without loading the research question with too many theoretical concepts in advance.",
+  "current_questions": [
+    "What is the relationship between science and diplomacy in China’s international scientific cooperation?",
+    "How are scientific and diplomatic/political goals related in Science Silk Road projects?",
+    "What forms does international scientific cooperation take under the Science Silk Road?"
+  ],
+  "design_options": [
+    {
+      "name": "A. Document-centred",
+      "question": "How is international scientific cooperation described in Chinese policy documents, and how has that description changed over time?",
+      "evidence": "Policy documents, speeches, plans, official reports.",
+      "model_papers": "Rüland & Rüffin (2024); Łuszczuk et al. (2020)"
+    },
+    {
+      "name": "B. Project-centred institutional comparison",
+      "question": "What forms does international scientific cooperation take under the Science Silk Road, and how do those forms differ in funding, operation, participation and access?",
+      "evidence": "Structured project dataset + project documents/webpages/agreements.",
+      "model_papers": "Hofmänner & Macamo (2021)"
+    },
+    {
+      "name": "C. Two-level design",
+      "question": "How do official accounts of international scientific cooperation relate to the concrete institutional arrangements of Science Silk Road projects?",
+      "evidence": "Top-down policy corpus + bottom-up project comparison.",
+      "model_papers": "Rüffin & Rüland (2022)"
+    }
+  ],
+  "dataset_fields": [
+    "name","location","category","agreements","host","lead","milestones","status",
+    "capex","funding","O&M","domain","time allocation","data rules","access",
+    "staff","participants","outputs","URL"
+  ],
+  "open_questions": [
+    "Should 'science diplomacy' be the central concept, or only part of the literature/background?",
+    "Is the main unit of analysis the policy text, the project, or both?",
+    "Do I want to explain variation between project types, or trace change over time?",
+    "What exactly can each type of document be treated as evidence of?",
+    "How should the project universe and case-selection criteria be defined?"
+  ]
+}
