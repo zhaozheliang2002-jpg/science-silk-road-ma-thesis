@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Science Silk Road — MA Thesis Research Hub</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <div class="eyebrow">MA THESIS · LIVING RESEARCH WORKSPACE</div>
+    <h1>Science Silk Road</h1>
+    <p>研究问题、文献、方法、证据与思路演变的长期工作台</p>
+  </div>
+  <div class="status"><span class="dot"></span>持续更新</div>
+</header>
+
+<nav class="nav">
+  <button data-tab="overview" class="active">总览</button>
+  <button data-tab="questions">研究问题</button>
+  <button data-tab="literature">文献库</button>
+  <button data-tab="design">方法与材料</button>
+  <button data-tab="notes">研究日志</button>
+</nav>
+
+<main>
+<section id="overview" class="tab active">
+  <div class="hero-grid">
+    <article class="card accent">
+      <div class="label">当前核心兴趣</div>
+      <h2 id="coreInterest"></h2>
+    </article>
+    <article class="card">
+      <div class="label">当前原则</div>
+      <h2>先保持问题简单，再让概念从材料中出现。</h2>
+      <p class="muted">不预设“合法性资源”“治理工具”等结论性概念。</p>
+    </article>
+  </div>
+  <h3>三个可行研究设计</h3>
+  <div id="designCards" class="grid3"></div>
+  <div class="split">
+    <article class="card">
+      <div class="label">目前开放的问题</div>
+      <div id="openQuestions"></div>
+    </article>
+    <article class="card">
+      <div class="label">快速备注（仅保存在当前浏览器）</div>
+      <textarea id="quickNotes" placeholder="随手记：今天想到什么？"></textarea>
+      <div class="small">自动保存在浏览器 localStorage。正式笔记请写入 notes.md。</div>
+    </article>
+  </div>
+</section>
+
+<section id="questions" class="tab">
+  <div class="section-head">
+    <div><div class="eyebrow">RESEARCH QUESTIONS</div><h2>问题不要先塞满理论</h2></div>
+  </div>
+  <div id="questionsList"></div>
+  <article class="card callout">
+    <div class="label">判断标准</div>
+    <p>一个问题如果在真正分析材料之前，就已经假定 science 是某种“资源”“工具”或“机制”，先把这些词删掉，再看问题是否仍然成立。</p>
+  </article>
+</section>
+
+<section id="literature" class="tab">
+  <div class="section-head">
+    <div><div class="eyebrow">LITERATURE LIBRARY</div><h2>Desk research 方法参照</h2></div>
+    <input id="search" class="search" placeholder="搜索作者、方法、期刊、关键词…">
+  </div>
+  <div id="filterChips" class="chips"></div>
+  <div id="paperList" class="paper-list"></div>
+</section>
+
+<section id="design" class="tab">
+  <div class="section-head"><div><div class="eyebrow">METHOD & EVIDENCE</div><h2>材料可以证明什么？</h2></div></div>
+  <div class="grid3">
+    <article class="card"><div class="label">政策文件</div><h3>适合证明</h3><p>官方如何表述目标、分类合作、界定问题与正当理由。</p><h3>不能直接证明</h3><p>政策制定者真实动机、项目实际运行效果。</p></article>
+    <article class="card"><div class="label">项目资料</div><h3>适合证明</h3><p>项目的正式制度安排：资金、主导方、参与规则、访问、数据、人员等。</p><h3>不能直接证明</h3><p>非正式协商、未公开冲突、个人体验。</p></article>
+    <article class="card"><div class="label">跨来源比较</div><h3>适合证明</h3><p>不同来源之间的一致、差异和缺口；官方叙事与制度安排是否吻合。</p><h3>注意</h3><p>缺失信息本身需要谨慎解释，不能自动当作不存在。</p></article>
+  </div>
+  <h3>现有 dataset 字段</h3>
+  <div id="fields" class="chips"></div>
+</section>
+
+<section id="notes" class="tab">
+  <div class="section-head">
+    <div><div class="eyebrow">RESEARCH LOG</div><h2>长期研究日志</h2></div>
+    <a class="btn" href="notes.md">打开 notes.md</a>
+  </div>
+  <article class="card">
+    <p>这里展示仓库中的 <code>notes.md</code>。在 GitHub 网页端点击铅笔即可长期编辑；提交后网站会更新。</p>
+    <div id="notesRender" class="markdown"></div>
+  </article>
+</section>
+</main>
+
+<footer>Science Silk Road · MA Thesis Research Hub</footer>
+<script src="app.js"></script>
+</body>
+</html>
