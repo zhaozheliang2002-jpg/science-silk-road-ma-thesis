@@ -11,13 +11,16 @@
   <div>
     <div class="eyebrow">MA THESIS · LIVING RESEARCH WORKSPACE</div>
     <h1>Science Silk Road</h1>
-    <p>研究问题、文献、方法、证据与思路演变的长期工作台</p>
+    <p>把“我到底在研究什么”拆成可移动、可修改、可追踪的研究路线。</p>
   </div>
-  <div class="status"><span class="dot"></span>持续更新</div>
+  <div class="top-actions">
+    <a class="btn" href="https://github.com/zhaozheliang2002-jpg/science-silk-road-ma-thesis/edit/main/notes.md" target="_blank">编辑研究日志 ↗</a>
+    <div class="status"><span class="dot"></span>持续更新</div>
+  </div>
 </header>
 
 <nav class="nav">
-  <button data-tab="overview" class="active">总览</button>
+  <button data-tab="map" class="active">论文思路地图</button>
   <button data-tab="questions">研究问题</button>
   <button data-tab="literature">文献库</button>
   <button data-tab="design">方法与材料</button>
@@ -25,48 +28,76 @@
 </nav>
 
 <main>
-<section id="overview" class="tab active">
-  <div class="hero-grid">
-    <article class="card accent">
+<section id="map" class="tab active">
+  <div class="section-head">
+    <div><div class="eyebrow">THESIS MAP</div><h2>从材料出发，而不是从概念出发</h2></div>
+  </div>
+
+  <div class="map-flow">
+    <article class="map-node node-object">
+      <div class="label">1 · EMPIRICAL OBJECT</div>
+      <h3>Science Silk Road</h3>
+      <p>中国国际科技合作项目、政策文件与制度安排。</p>
+      <div class="mini-tags"><span>joint labs</span><span>science parks</span><span>big science</span><span>training</span></div>
+    </article>
+    <div class="arrow">→</div>
+    <article class="map-node node-question">
+      <div class="label">2 · SIMPLE QUESTION</div>
+      <h3>科学和外交 / 政治，到底怎么连在一起？</h3>
+      <p>先不预设 science 是“资源”“工具”或“机制”。</p>
+    </article>
+    <div class="arrow">→</div>
+    <article class="map-node node-evidence">
+      <div class="label">3 · EVIDENCE</div>
+      <h3>两层材料</h3>
+      <p><b>Top-down：</b>政策、讲话、规划、官方报告</p>
+      <p><b>Bottom-up：</b>项目协议、机构安排、资金、参与、访问、数据</p>
+    </article>
+  </div>
+
+  <div class="branch-title">目前有三条可行研究路线</div>
+  <div id="designCards" class="grid3"></div>
+
+  <div class="split">
+    <article class="card">
       <div class="label">当前核心兴趣</div>
       <h2 id="coreInterest"></h2>
     </article>
-    <article class="card">
-      <div class="label">当前原则</div>
-      <h2>先保持问题简单，再让概念从材料中出现。</h2>
-      <p class="muted">不预设“合法性资源”“治理工具”等结论性概念。</p>
-    </article>
-  </div>
-  <h3>三个可行研究设计</h3>
-  <div id="designCards" class="grid3"></div>
-  <div class="split">
-    <article class="card">
-      <div class="label">目前开放的问题</div>
+    <article class="card callout">
+      <div class="label">现在不要急着回答</div>
       <div id="openQuestions"></div>
     </article>
-    <article class="card">
-      <div class="label">快速备注（仅保存在当前浏览器）</div>
-      <textarea id="quickNotes" placeholder="随手记：今天想到什么？"></textarea>
-      <div class="small">自动保存在浏览器 localStorage。正式笔记请写入 notes.md。</div>
-    </article>
   </div>
+
+  <article class="card decision-board">
+    <div class="label">DECISION BOARD</div>
+    <div class="decision-grid">
+      <div><b>主分析单位</b><span>政策文本？项目？还是两者？</span></div>
+      <div><b>主比较维度</b><span>项目类型？时间变化？合作伙伴？</span></div>
+      <div><b>science diplomacy</b><span>核心概念？还是文献背景？</span></div>
+      <div><b>最终贡献</b><span>先不写死，等 pattern 出来。</span></div>
+    </div>
+  </article>
 </section>
 
 <section id="questions" class="tab">
   <div class="section-head">
-    <div><div class="eyebrow">RESEARCH QUESTIONS</div><h2>问题不要先塞满理论</h2></div>
+    <div><div class="eyebrow">RESEARCH QUESTIONS</div><h2>工作中的问题版本</h2></div>
   </div>
   <div id="questionsList"></div>
   <article class="card callout">
-    <div class="label">判断标准</div>
-    <p>一个问题如果在真正分析材料之前，就已经假定 science 是某种“资源”“工具”或“机制”，先把这些词删掉，再看问题是否仍然成立。</p>
+    <div class="label">筛选规则</div>
+    <p>如果一个问题在分析开始前就已经假定 science 是某种“资源”“工具”“合法性机制”，先删掉这些概念，再检查问题是否仍然成立。</p>
   </article>
 </section>
 
 <section id="literature" class="tab">
   <div class="section-head">
-    <div><div class="eyebrow">LITERATURE LIBRARY</div><h2>Desk research 方法参照</h2></div>
-    <input id="search" class="search" placeholder="搜索作者、方法、期刊、关键词…">
+    <div><div class="eyebrow">LITERATURE LIBRARY</div><h2>文献库</h2><p class="muted">每篇文献都有独立详情页、阅读状态、关键启发与可引用段落区。</p></div>
+    <div class="toolbar">
+      <input id="search" class="search" placeholder="搜索作者、方法、期刊、关键词…">
+      <a class="btn" href="literature-notes/_TEMPLATE.md" target="_blank">新文献模板</a>
+    </div>
   </div>
   <div id="filterChips" class="chips"></div>
   <div id="paperList" class="paper-list"></div>
@@ -75,9 +106,9 @@
 <section id="design" class="tab">
   <div class="section-head"><div><div class="eyebrow">METHOD & EVIDENCE</div><h2>材料可以证明什么？</h2></div></div>
   <div class="grid3">
-    <article class="card"><div class="label">政策文件</div><h3>适合证明</h3><p>官方如何表述目标、分类合作、界定问题与正当理由。</p><h3>不能直接证明</h3><p>政策制定者真实动机、项目实际运行效果。</p></article>
-    <article class="card"><div class="label">项目资料</div><h3>适合证明</h3><p>项目的正式制度安排：资金、主导方、参与规则、访问、数据、人员等。</p><h3>不能直接证明</h3><p>非正式协商、未公开冲突、个人体验。</p></article>
-    <article class="card"><div class="label">跨来源比较</div><h3>适合证明</h3><p>不同来源之间的一致、差异和缺口；官方叙事与制度安排是否吻合。</p><h3>注意</h3><p>缺失信息本身需要谨慎解释，不能自动当作不存在。</p></article>
+    <article class="card"><div class="label">政策文件</div><h3>适合证明</h3><p>官方如何表述目标、分类合作、界定问题与理由。</p><h3>不能直接证明</h3><p>政策制定者真实动机、项目实际运行效果。</p></article>
+    <article class="card"><div class="label">项目资料</div><h3>适合证明</h3><p>项目的正式制度安排：资金、主导方、参与规则、访问、数据、人员。</p><h3>不能直接证明</h3><p>非正式协商、未公开冲突、个人体验。</p></article>
+    <article class="card"><div class="label">跨来源比较</div><h3>适合证明</h3><p>官方叙事与制度安排之间的一致、差异和缺口。</p><h3>注意</h3><p>信息缺失不能自动解释为“没有发生”。</p></article>
   </div>
   <h3>现有 dataset 字段</h3>
   <div id="fields" class="chips"></div>
@@ -86,10 +117,9 @@
 <section id="notes" class="tab">
   <div class="section-head">
     <div><div class="eyebrow">RESEARCH LOG</div><h2>长期研究日志</h2></div>
-    <a class="btn" href="notes.md">打开 notes.md</a>
+    <a class="btn" href="https://github.com/zhaozheliang2002-jpg/science-silk-road-ma-thesis/edit/main/notes.md" target="_blank">在 GitHub 编辑 notes.md ↗</a>
   </div>
   <article class="card">
-    <p>这里展示仓库中的 <code>notes.md</code>。在 GitHub 网页端点击铅笔即可长期编辑；提交后网站会更新。</p>
     <div id="notesRender" class="markdown"></div>
   </article>
 </section>
