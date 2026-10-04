@@ -15,7 +15,10 @@
     "relation":"Useful model for a document-only design focused on discourse over time. Could inspire periodisation of Chinese policy documents and comparison of how international scientific cooperation is framed across phases.",
     "tags":["desk research","content analysis","discourse","temporal comparison","science diplomacy"],
     "priority":"High",
-    "notes":"Potential template if the thesis becomes primarily about how official understandings of international scientific cooperation change over time."
+    "read_status":"待读",
+    "key_insight":"如果论文最终转向“官方理解如何随时间变化”，这篇可以直接提供文献编码与时间比较的模板。",
+    "quotable_passages":"待读后填写。这里只记录短引文、页码和为什么值得引用；不要整段复制。",
+    "notes_file":"literature-notes/ruland-ruffin-2024.md"
   },
   {
     "id":"luszczuk-et-al-2020",
@@ -33,7 +36,10 @@
     "relation":"Very close to the simple substantive question: what is the relationship between scientific and political/diplomatic goals? Shows that this can be studied directly from official documents without presupposing that science is merely a foreign-policy instrument.",
     "tags":["desk research","policy documents","mixed content analysis","science and politics","comparative"],
     "priority":"Very high",
-    "notes":"Especially useful if I want to distinguish scientific rationales from political/diplomatic rationales in Science Silk Road documents."
+    "read_status":"待读",
+    "key_insight":"最值得借鉴的是把 scientific rationales 与 political rationales 分开识别，再分析二者如何组合，而不是预设 science 服务 diplomacy。",
+    "quotable_passages":"待读后填写。",
+    "notes_file":"literature-notes/luszczuk-et-al-2020.md"
   },
   {
     "id":"karacan-2021",
@@ -51,7 +57,10 @@
     "relation":"Useful for source triangulation: one project can be reconstructed from government documents, partner-side materials, reports, press releases and institutional webpages. Less useful as a purely sociological theory template.",
     "tags":["desk research","qualitative content analysis","policy process","EU","science diplomacy"],
     "priority":"Medium",
-    "notes":"Good source-collection template for projects where no single authoritative document gives the whole story."
+    "read_status":"待读",
+    "key_insight":"适合借鉴公开来源三角验证：同一个项目由政府文件、合作方材料、报告、新闻稿和机构网页共同重建。",
+    "quotable_passages":"待读后填写。",
+    "notes_file":"literature-notes/karacan-2021.md"
   },
   {
     "id":"hofmaenner-macamo-2021",
@@ -69,7 +78,10 @@
     "relation":"Most useful for treating institutional arrangements as sociological evidence. Variables such as category, funding, lead institution, administrative ownership, access and evaluation criteria are not just background—they can reveal how cooperation is institutionally organised and classified.",
     "tags":["desk research","STS","institutional analysis","classification","international scientific cooperation"],
     "priority":"Very high",
-    "notes":"Important theoretical/methodological bridge from my structured project dataset to a sociological argument."
+    "read_status":"待读",
+    "key_insight":"这篇最重要的启发是：分类、资金、行政归属、访问安排本身就是社会学材料，而不仅是背景描述。",
+    "quotable_passages":"待读后填写。",
+    "notes_file":"literature-notes/hofmaenner-macamo-2021.md"
   },
   {
     "id":"ruffin-ruland-2022",
@@ -87,6 +99,9 @@
     "relation":"Probably the closest structural template for this thesis: combine top-down policy documents with bottom-up comparison of concrete Science Silk Road projects. Could compare joint labs, science parks, big-science infrastructure, technology-transfer centres and training programmes against official policy narratives.",
     "tags":["desk research","case comparison","policy documents","projects","science diplomacy"],
     "priority":"Very high",
-    "notes":"Strong candidate for overall research-design model: policy layer + project layer."
+    "read_status":"待读",
+    "key_insight":"目前最接近整体研究设计：上层政策文本 + 下层具体项目，比较官方叙事与项目制度安排。",
+    "quotable_passages":"待读后填写。",
+    "notes_file":"literature-notes/ruffin-ruland-2022.md"
   }
 ]
