@@ -21,7 +21,8 @@ async function load(){
     <article class="detail-hero">
       <div class="label">${esc(p.authors)} · ${p.year}</div>
       <h1>${esc(p.title)}</h1>
-      <p class="meta"><i>${esc(p.journal)}</i> ${esc(p.volume)}, ${esc(p.pages)} · DOI ${esc(p.doi)}</p>
+      <p class="meta"><i>${esc(p.journal)}</i> · ${esc(p.year)} · ${esc(p.volume)}, ${esc(p.pages)}</p>
+      <p class="meta"><b>期刊属性：</b> ${esc(p.journal_type)}<br><b>是否社会学期刊：</b> ${esc(p.sociology_status)}</p>
       <div class="paper-badges"><span class="read-status">${esc(p.read_status)}</span><span class="priority">${esc(p.priority)} priority</span></div>
       <div class="edit-row">
         <a class="btn" href="${p.url}" target="_blank">打开 DOI ↗</a>
@@ -30,8 +31,8 @@ async function load(){
     </article>
     <div class="detail-grid">
       <article class="detail-box"><h3>研究问题</h3><p>${esc(p.question)}</p></article>
-      <article class="detail-box"><h3>方法</h3><p>${esc(p.method)}</p></article>
-      <article class="detail-box"><h3>材料</h3><p>${esc(p.materials)}</p></article>
+      <article class="detail-box"><h3>方法</h3><p><b>作者原文术语：</b> ${esc(p.method_original)}</p><p>${esc(p.method)}</p></article>
+      <article class="detail-box"><h3>用到的数据 / 材料</h3><p>${esc(p.materials)}</p></article>
       <article class="detail-box"><h3>与我的论文关系</h3><p>${esc(p.relation)}</p></article>
       <article class="detail-box"><h3>关键启发</h3><p>${esc(p.key_insight)}</p></article>
       <article class="detail-box"><h3>可引用段落</h3><p>${esc(p.quotable_passages)}</p></article>
