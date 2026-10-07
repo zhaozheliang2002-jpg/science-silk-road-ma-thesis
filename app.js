@@ -37,13 +37,16 @@ function renderPapers(){
       <div>
         <div class="label">${p.authors} · ${p.year}</div>
         <h3><a href="paper.html?id=${encodeURIComponent(p.id)}">${p.title}</a></h3>
-        <div class="meta"><i>${p.journal}</i> ${p.volume}, ${p.pages}</div>
+        <div class="meta"><i>${p.journal}</i> · ${p.year} · ${p.sociology_status}</div>
+        <div class="meta">${p.volume}, ${p.pages}</div>
       </div>
       <div class="paper-badges">
         <span class="read-status ${statusClass(p.read_status)}">${p.read_status}</span>
         <span class="priority">${p.priority} priority</span>
       </div>
     </div>
+    <div class="paper-summary"><b>方法：</b> ${p.method_original || p.method}</div>
+    <div class="paper-summary"><b>数据：</b> ${p.materials}</div>
     <div class="paper-summary"><b>为什么和我的论文有关：</b> ${p.relation}</div>
     <div class="paper-links">
       <a class="btn" href="paper.html?id=${encodeURIComponent(p.id)}">打开详情页 →</a>
